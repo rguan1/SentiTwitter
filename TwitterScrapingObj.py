@@ -1,6 +1,6 @@
 import tweepy
 from tweepy import RateLimitError
-import json
+from AlchemyServer import *
 
 # Keys that are needed to access Twitter API via
 # consumer_key = "ADD CONSUMER KEY"
@@ -16,8 +16,6 @@ access_token_secret = "f8KWKG1h18w0C3YhHMNWDjOyjxuZChBJ16SNGHBczatOQ"
 
 
 class TwitterScraper:
-    #since_id, max_id, count, page
-
     def __init__(self):
         self.max_id = None
 
@@ -39,7 +37,11 @@ class TwitterScraper:
 
                 if self.max_id is None or self.max_id > jsonDict['id']:
                     self.max_id = jsonDict['id'] - 1
-                    # print(jsonDict["id"] + " " + jsonDict["created_at"] + " " + jsonDict["full_text"])
-                    print(jsonDict["created_at"] + " " + jsonDict['full_text'])
+                    add_tweet(
+                        name=jsonDict['user']['name'],
+                        twitterId=jsonDict['id'],
+                        createdAt=jsonDict['created_at'],
+                        fullText=jsonDict['full_text'])
+                    print(jsonDict['user']['name'] + " " + jsonDict["created_at"] + " " + jsonDict['full_text'])
         except RateLimitError:
             print("You've exceeded the rate that we are allowed to pull from")

@@ -38,7 +38,8 @@ def parsed_json_home_timeline_scrape():
         public_tweets = api.home_timeline(since_id=1020315883451965440, count=100, tweet_mode='extended')
         for tweet in public_tweets:
             jsonDict = tweet._json
-            print(jsonDict["created_at"] + " " + jsonDict["full_text"])
+            # print(jsonDict["created_at"] + " " + jsonDict["full_text"])
+            print(tweet)
 
     except RateLimitError:
         print("You've exceeded the rate that we are allowed to pull from")

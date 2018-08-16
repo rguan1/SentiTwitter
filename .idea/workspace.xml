@@ -377,7 +377,7 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Desktop/Bank Mobile Projects/flask_tutorial/flask_tutorial/crud.py</url>
+          <url />
           <line>21</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>

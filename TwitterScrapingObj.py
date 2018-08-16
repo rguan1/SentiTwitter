@@ -2,6 +2,10 @@ import tweepy
 from tweepy import RateLimitError
 from AlchemyServer import *
 
+#Note, this should be removed from your program! This is just a way of hiding our key while still using github
+#publically
+import TwitterPwdGrabber
+
 # Keys that are needed to access Twitter API via
 # consumer_key = "ADD CONSUMER KEY"
 # consumer_secret = "ADD CONSUMER SECRET"
@@ -9,10 +13,10 @@ from AlchemyServer import *
 # access_token_secret = "ADD ACCESS TOKEN SECRET"
 
 
-consumer_key = "2IrLEJjQjmLdXmScdOIxCcE9G"
-consumer_secret = "Xn1xGV2nLc1JfJAatnkc89ktClLY5HR0d5JgX2U4Z9Xq8U6icy"
-access_token = "1008908720657584128-COXHZz1ijC1SVTuYrAmEcjgS9eSzQR"
-access_token_secret = "f8KWKG1h18w0C3YhHMNWDjOyjxuZChBJ16SNGHBczatOQ"
+consumer_key = TwitterPwdGrabber.consumer_key
+consumer_secret = TwitterPwdGrabber.consumer_secret
+access_token = TwitterPwdGrabber.access_token
+access_token_secret = TwitterPwdGrabber.access_token_secret
 
 
 class TwitterScraper:

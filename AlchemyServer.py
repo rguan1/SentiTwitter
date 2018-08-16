@@ -6,8 +6,8 @@ from flask_marshmallow import Marshmallow
 
 
 # AlchemyServer.py hosts the code that interacts with our server which is either an sqlite server  (testing)
-#  or mysql server (production). AlchemyServer also is also intended to maintain our api endpoint so that our clients can access our tweet data.
-#  We are using flask, sqlAlchemy, and Marshmallow.
+#  or mysql server (production). AlchemyServer also is also intended to maintain our api endpoint so that our
+# clients can access our tweet data. We are using flask, sqlAlchemy, and Marshmallow.
 
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))

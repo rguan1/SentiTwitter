@@ -1,2 +1,5 @@
-# Ignore file TwitterPwdGrabber since the keys are confidential to me!
+# Ignore file TwitterPwdGrabber since the keys are confidential to me
 TwitterPwdGrabber.py
+
+# Ignore all .pyc files
+*.pyc

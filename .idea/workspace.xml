@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d18ae5-33ce-4edd-8e63-7003fb9be80d" name="Default" comment="Starting Server Code. &#10;Also was able to make TwitterScrapingObj work as intended">
-      <change afterPath="$PROJECT_DIR$/TwitterPwdGrabber.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlchemyServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/AlchemyServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterScrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/TwitterScrape.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwitterScrapingObj.py" beforeDir="false" afterPath="$PROJECT_DIR$/TwitterScrapingObj.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +29,7 @@
       <file leaf-file-name="TwitterScrapingObj.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwitterScrapingObj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="255">
               <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="59" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -64,7 +59,7 @@
       <file leaf-file-name="crud.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/Bank Mobile Projects/flask_tutorial/flask_tutorial/crud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="459">
               <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -76,7 +71,7 @@
       <file leaf-file-name="AlchemyServer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AlchemyServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="578">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -88,8 +83,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state>
+              <caret column="69" lean-forward="true" selection-start-column="69" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -120,6 +115,7 @@
       <find>created_at</find>
       <find>POST</find>
       <find>request</find>
+      <find>twitterPwdGrabber</find>
     </findStrings>
     <replaceStrings>
       <replace>async_</replace>
@@ -333,7 +329,7 @@
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28161532" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09166667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09166667" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -377,7 +373,7 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$USER_HOME$/Desktop/Bank Mobile Projects/flask_tutorial/flask_tutorial/crud.py</url>
           <line>21</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -708,7 +704,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/Bank Mobile Projects/flask_tutorial/flask_tutorial/crud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="459">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -718,7 +714,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AlchemyServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="578">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -742,7 +738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TwitterScrapingObj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="59" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -766,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state>
+          <caret column="69" lean-forward="true" selection-start-column="69" selection-end-column="69" />
         </state>
       </provider>
     </entry>

@@ -22,14 +22,32 @@ class Tweet(db.Model):
     twitterId = db.Column(db.Integer, unique=True, nullable=False)
     createdAt = db.Column(db.DateTime)
     fullText = db.Column(db.Text)
+    sentimentRating = db.Column(db.Float)
 
     def __repr__(self):
-        return '<Tweet %r | %r | %r>' % (self.name, self.createdAt, self.fullText)
+        return '<Tweet %r | %r | %r | %r>' % (self.name, self.createdAt, self.fullText, self.sentimentRating)
 
 
 class TweetSchema(ma.ModelSchema):
     class Meta:
         model = Tweet
+
+#Declaring schemas which are required by marshamllow
+tweet_schema = TweetSchema()
+tweets_schema = TweetSchema(many=True)
+
+
+@app.route("api/tweet", methods=["GET"])
+def get_tweets():
+    all_tweets = Tweet.all()
+    return tweet_schema.jsonify(all_tweets)
+
+    # alternative way according to flask-marshmallow docs
+    # all_tweets = Tweet.all()
+    # result = tweets_schema.dump(all_tweets)
+    # return jsonify(result.data)
+
+
 
 
 

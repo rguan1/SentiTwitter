@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57d18ae5-33ce-4edd-8e63-7003fb9be80d" name="Default" comment="Starting Server Code. &#10;Also was able to make TwitterScrapingObj work as intended">
+    <list default="true" id="57d18ae5-33ce-4edd-8e63-7003fb9be80d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/TwitterScrapingObj.py" beforeDir="false" afterPath="$PROJECT_DIR$/TwitterScrapingObj.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitterScrapingObj.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TwitterScrapingObj.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TwitterScrapingObj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="51" column="64" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
+            <state relative-caret-position="697">
+              <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -56,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crud.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crud.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/Bank Mobile Projects/flask_tutorial/flask_tutorial/crud.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -306,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534191275933</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="minor import changes">
+      <created>1534471769314</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534471769314</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -344,7 +351,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting Server Code. &#10;Also was able to make TwitterScrapingObj work as intended" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting Server Code. &#10;Also was able to make TwitterScrapingObj work as intended" />
+    <MESSAGE value="minor import changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor import changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -359,7 +367,7 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$USER_HOME$/Desktop/Bank Mobile Projects/flask_tutorial/flask_tutorial/crud.py</url>
           <line>21</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -709,27 +717,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterPwdGrabber.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterScrapingObj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="51" column="64" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TwitterScrape.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="107" selection-start-line="5" selection-start-column="107" selection-end-line="5" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Bank Mobile Projects/flask_tutorial/flask_tutorial/crud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterPwdGrabber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -743,12 +751,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/Bank Mobile Projects/flask_tutorial/flask_tutorial/crud.py">
+    <entry file="file://$PROJECT_DIR$/TwitterScrapingObj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="697">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

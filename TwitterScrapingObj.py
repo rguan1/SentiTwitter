@@ -10,7 +10,7 @@ import TwitterPwdGrabber
 # consumer_key = "ADD CONSUMER KEY"
 # consumer_secret = "ADD CONSUMER SECRET"
 # access_token = "ADD ACCESS TOKEN"
-# access_token_secret = "ADD ACCESS TOKEN SECRET"
+# access_token_secret = "ADD ACCESS TOKEN SECRET
 
 
 consumer_key = TwitterPwdGrabber.consumer_key

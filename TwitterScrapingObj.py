@@ -42,7 +42,7 @@ class TwitterScraper:
                 if self.max_id is None or self.max_id > jsonDict['id']:
                     self.max_id = jsonDict['id'] - 1
 
-                    #This adds the tweet to database
+                    #This adds the tweet to database!
                     AlchemyServer.add_tweet(
                         name=jsonDict['user']['name'],
                         twitterId=jsonDict['id'],

@@ -1,6 +1,6 @@
 import tweepy
 from tweepy import RateLimitError
-from AlchemyServer import *
+import AlchemyServer
 
 #Note, this should be removed from your program! This is just a way of hiding our key while still using github
 #publically
@@ -41,7 +41,8 @@ class TwitterScraper:
 
                 if self.max_id is None or self.max_id > jsonDict['id']:
                     self.max_id = jsonDict['id'] - 1
-                    add_tweet(
+
+                    AlchemyServer.add_tweet(
                         name=jsonDict['user']['name'],
                         twitterId=jsonDict['id'],
                         createdAt=jsonDict['created_at'],

@@ -37,7 +37,7 @@ tweet_schema = TweetSchema()
 tweets_schema = TweetSchema(many=True)
 
 
-@app.route("api/tweet", methods=["GET"])
+@app.route("/api/tweet", methods=["GET"])
 def get_tweets():
     all_tweets = Tweet.all()
     return tweet_schema.jsonify(all_tweets)
@@ -51,8 +51,12 @@ def get_tweets():
 
 
 
-def add_tweet(name, twitterId, createdAt, fullText):
+def add_tweet(name, twitterId, createdAt, fullText, sentimentRating):
     datetimePythonFormat = parser.parse(createdAt)
-    newTweet = Tweet(name=name, twitterId=twitterId, createdAt=datetimePythonFormat, fullText=fullText)
+    newTweet = Tweet(name=name,
+                     twitterId=twitterId,
+                     createdAt=datetimePythonFormat,
+                     fullText=fullText,
+                     sentimentRating=sentimentRating)
     db.session.add(newTweet)
     db.session.commit()

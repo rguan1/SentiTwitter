@@ -42,12 +42,17 @@ class TwitterScraper:
                 if self.max_id is None or self.max_id > jsonDict['id']:
                     self.max_id = jsonDict['id'] - 1
 
+                    #Sentiment constant. Should be replaced by an actual calculator
+                    fakeSentimentRating = 1.0
+
                     #This adds the tweet to database!!
                     AlchemyServer.add_tweet(
                         name=jsonDict['user']['name'],
                         twitterId=jsonDict['id'],
                         createdAt=jsonDict['created_at'],
-                        fullText=jsonDict['full_text'])
+                        fullText=jsonDict['full_text'],
+                        sentimentRating=fakeSentimentRating)
+
                     print(jsonDict['user']['name'] + " " + jsonDict["created_at"] + " " + jsonDict['full_text'])
         except RateLimitError:
             print("You've exceeded the rate that we are allowed to pull from")

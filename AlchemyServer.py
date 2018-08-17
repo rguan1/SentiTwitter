@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 import os
 from dateutil import parser
@@ -37,15 +37,15 @@ tweet_schema = TweetSchema()
 tweets_schema = TweetSchema(many=True)
 
 
-@app.route("/api/tweet", methods=["GET"])
+@app.route("/api/tweets", methods=["GET"])
 def get_tweets():
-    all_tweets = Tweet.all()
-    return tweet_schema.jsonify(all_tweets)
+    # all_tweets = Tweet.query.all()
+    # return tweet_schema.jsonify(all_tweets)
 
     # alternative way according to flask-marshmallow docs
-    # all_tweets = Tweet.all()
-    # result = tweets_schema.dump(all_tweets)
-    # return jsonify(result.data)
+    all_tweets = Tweet.query.all()
+    result = tweets_schema.dump(all_tweets)
+    return jsonify(result.data)
 
 
 
@@ -60,3 +60,7 @@ def add_tweet(name, twitterId, createdAt, fullText, sentimentRating):
                      sentimentRating=sentimentRating)
     db.session.add(newTweet)
     db.session.commit()
+
+
+if __name__ == '__main__':
+    app.run(debug=True, port=8000)

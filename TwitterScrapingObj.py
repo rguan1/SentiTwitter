@@ -1,5 +1,6 @@
 import tweepy
 from tweepy import RateLimitError
+from textblob import TextBlob
 import AlchemyServer
 
 #Note, this should be removed from your program! This is just a way of hiding our key while still using github
@@ -23,6 +24,10 @@ class TwitterScraper:
     def __init__(self):
         self.max_id = None
 
+    def sentiAnalysis(self): #returns a value between -1 and 1. -1 is very negative and 1 is very positive
+        textb=TextBlob(self)
+        return textb.sentiment.polarity
+
     def parsed_json_home_timeline_scrape(self):
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
@@ -43,7 +48,7 @@ class TwitterScraper:
                     self.max_id = jsonDict['id'] - 1
 
                     #Sentiment constant. Should be replaced by an actual calculator
-                    fakeSentimentRating = 1.0
+                    fakeSentimentRating = sentiAnalysis(json.dumps(jsonDict["full_text"]))
 
                     #This adds the tweet to database!!
                     AlchemyServer.add_tweet(

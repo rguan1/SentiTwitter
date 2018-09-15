@@ -54,7 +54,6 @@ def get_tweets():
 def get_tweets_on_date(date):
     datePythonFormat = parser.parse(date).date()
     tweetReturnBasedOnDate = Tweet.query.filter(func.DATE(Tweet.createdAt) == datePythonFormat)
-    # tweetReturnBasedOnDate = db.session.query(Tweet).filter(func.DATE(Tweet.createdAt) == datePythonFormat)
     result = tweets_schema.dump(tweetReturnBasedOnDate)
     return jsonify(result.data)
 

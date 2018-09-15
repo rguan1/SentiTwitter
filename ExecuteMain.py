@@ -1,4 +1,5 @@
 from TwitterScrapingObj import *
+from AlchemyServer import *
 
 
 def main():
@@ -6,6 +7,7 @@ def main():
     singleScrapingObject.parsed_json_home_timeline_scrape()
     print("TEST")
     print("TEST")
+    print(is_database_empty())
 
 
 if __name__ == '__main__':

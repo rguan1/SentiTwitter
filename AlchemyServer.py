@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 from dateutil import parser
 from flask_marshmallow import Marshmallow
+from sqlalchemy import func
 
 
 # AlchemyServer.py hosts the code that interacts with our server which is either an sqlite server  (testing)
@@ -32,6 +33,7 @@ class TweetSchema(ma.ModelSchema):
     class Meta:
         model = Tweet
 
+
 #Declaring schemas which are required by marshamllow
 tweet_schema = TweetSchema()
 tweets_schema = TweetSchema(many=True)
@@ -48,6 +50,14 @@ def get_tweets():
     return jsonify(result.data)
 
 
+@app.route("/api/tweets/<date>")
+def get_tweets_on_date(date):
+    datePythonFormat = parser.parse(date).date()
+    tweetReturnBasedOnDate = Tweet.query.filter(func.DATE(Tweet.createdAt) == datePythonFormat)
+    # tweetReturnBasedOnDate = db.session.query(Tweet).filter(func.DATE(Tweet.createdAt) == datePythonFormat)
+    result = tweets_schema.dump(tweetReturnBasedOnDate)
+    return jsonify(result.data)
+
 
 
 
@@ -60,6 +70,18 @@ def add_tweet(name, twitterId, createdAt, fullText, sentimentRating):
                      sentimentRating=sentimentRating)
     db.session.add(newTweet)
     db.session.commit()
+
+
+def get_largest_id_tweet():
+    maxTwitterId = db.session.query(db.func.max(Tweet.twitterId)).scalar()
+    return maxTwitterId
+
+def is_database_empty():
+    firstTweet = Tweet.query.first()
+    if firstTweet is None:
+        return True
+    else:
+        return False
 
 
 if __name__ == '__main__':

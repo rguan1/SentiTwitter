@@ -2,8 +2,10 @@ import tweepy
 from tweepy import RateLimitError
 import json
 
-#Note, this should be removed from your program! This is just a way of hiding our key while still using github
-#publically. Likewise TwitterPwdGrabber.(whatever key/token) should be replaced by your own key and tokens.
+#
+# Note, this should be removed from your program! This is just a way of hiding our key while still using github
+# publically. Likewise TwitterPwdGrabber.(whatever key/token) should be replaced by your own key and tokens.
+
 import TwitterPwdGrabber
 
 # Keys that are needed to access Twitter API via
